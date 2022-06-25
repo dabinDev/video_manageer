@@ -20,13 +20,4 @@ dev_dependencies:
   flutter_lints: ^1.0.0
 flutter:
   uses-material-design: true
-  assets: [
-    - assets/image/
-      -
-    - assets/icon/
-    - assets/font/
-    - assets/
-    - assets/image/
-    - assets/i18n/
-    - assets/json/
-    - assets/anim/]
+  assets: [assets/image/bg.jpg]
