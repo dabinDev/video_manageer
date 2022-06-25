@@ -1,8 +1,13 @@
+import 'package:bitsdojo_window/bitsdojo_window.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:video_manageer/app/modules/left_side_module/left_side_page.dart';
 import 'package:video_manageer/app/modules/video_manager_module/video_manager_controller.dart';
 
 import '../../../gen_a/A.dart';
+import '../right_side_module/right_side_page.dart';
+
+const borderColor = Color(0xFF805306);
 
 class video_managerPage extends GetView<video_managerController> {
   @override
@@ -19,7 +24,13 @@ class video_managerPage extends GetView<video_managerController> {
                 opacity: 0.7),
             color: Colors.deepPurple,
             backgroundBlendMode: BlendMode.srcOver),
-        child: Text("4546"),
+        child: WindowBorder(
+          color: borderColor,
+          width: 1,
+          child: Row(
+            children: const [LeftSidePage(), RightSidePage()],
+          ),
+        ),
       ),
     );
   }

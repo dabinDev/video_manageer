@@ -1,3 +1,5 @@
+import '../../app/modules/window_buttons_module/window_buttons_page.dart';
+import '../../app/modules/window_buttons_module/window_buttons_bindings.dart';
 import '../../app/modules/right_side_module/right_side_page.dart';
 import '../../app/modules/right_side_module/right_side_bindings.dart';
 import '../../app/modules/left_side_module/left_side_page.dart';
@@ -26,6 +28,11 @@ abstract class AppPages {
       name: Routes.RIGHT_SIDE,
       page: () => RightSidePage(),
       binding: RightSideBinding(),
+    ),
+    GetPage(
+      name: Routes.WINDOW_BUTTONS,
+      page: () => WindowButtonsPage(),
+      binding: WindowButtonsBinding(),
     ),
   ];
 }
