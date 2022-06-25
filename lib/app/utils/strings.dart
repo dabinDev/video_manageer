@@ -2,4 +2,5 @@
  * GetX Template Generator - fb.com/htngu.99
  * */
 
-String home = 'Home';
+const String home = 'Home';
+const String appName="狙盘手-视频管理器";
