@@ -7,13 +7,12 @@ import 'package:video_manageer/app/modules/video_manager_module/video_manager_co
 import '../../../gen_a/A.dart';
 import '../right_side_module/right_side_page.dart';
 
-const borderColor = Color(0xFF805306);
+const borderColor = Color(0xFF212121);
 
 class video_managerPage extends GetView<video_managerController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('短视频管理器')),
       body: Container(
         width: double.infinity,
         height: double.infinity,

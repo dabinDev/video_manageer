@@ -8,8 +8,8 @@ import '../window_buttons_module/window_buttons_page.dart';
 /**
  * GetX Template Generator - fb.com/htngu.99
  * */
-const backgroundStartColor = Color(0xFFFFD500);
-const backgroundEndColor = Color(0xFFF6A00C);
+const backgroundStartColor = Color(0x4F26C6DA);
+const backgroundEndColor = Color(0x4FE0E0E0);
 
 class RightSidePage extends GetView<RightSideController> {
   const RightSidePage({Key? key}) : super(key: key);
