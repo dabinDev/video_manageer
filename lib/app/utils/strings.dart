@@ -3,4 +3,4 @@
  * */
 
 const String home = 'Home';
-const String appName="狙盘手-视频管理器";
+const String appName="短视频管理器";
