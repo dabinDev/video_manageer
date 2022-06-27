@@ -16,7 +16,6 @@ dependencies:
   dio_cookie_manager: ^2.0.0
   flutter_svg: ^0.22.0
   webview_windows: ^0.2.0
-  dart_vlc: ^0.3.0
 dev_dependencies:
   flutter_test: {sdk: flutter}
   flutter_lints: ^1.0.0

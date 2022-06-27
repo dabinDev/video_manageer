@@ -1,12 +1,14 @@
-import '../../app/modules/window_buttons_module/window_buttons_page.dart';
-import '../../app/modules/window_buttons_module/window_buttons_bindings.dart';
-import '../../app/modules/right_side_module/right_side_page.dart';
-import '../../app/modules/right_side_module/right_side_bindings.dart';
-import '../../app/modules/left_side_module/left_side_page.dart';
+import 'package:get/get.dart';
+
 import '../../app/modules/left_side_module/left_side_bindings.dart';
+import '../../app/modules/left_side_module/left_side_page.dart';
+import '../../app/modules/right_side_module/right_side_bindings.dart';
+import '../../app/modules/right_side_module/right_side_page.dart';
 import '../../app/modules/video_manager_module/video_manager_bindings.dart';
 import '../../app/modules/video_manager_module/video_manager_page.dart';
-import 'package:get/get.dart';
+import '../../app/modules/window_buttons_module/window_buttons_bindings.dart';
+import '../../app/modules/window_buttons_module/window_buttons_page.dart';
+
 part './app_routes.dart';
 /**
  * GetX Generator - fb.com/htngu.99

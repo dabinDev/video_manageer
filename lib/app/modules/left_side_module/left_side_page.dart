@@ -22,7 +22,10 @@ class LeftSidePage extends GetView<LeftSideController> {
               children: [
                 WindowTitleBarBox(
                     child: MoveWindow(
-                  child: const Center(
+                  child: Container(
+                    width: double.infinity,
+                    color: Colors.white,
+                    alignment: Alignment.center,
                     child: Text(
                       appName,
                       style: TextStyle(
@@ -50,10 +53,9 @@ class LeftSidePage extends GetView<LeftSideController> {
       child: const TextField(
         decoration: InputDecoration(
           contentPadding: const EdgeInsets.fromLTRB(5, 0, 5, 0),
-            border: OutlineInputBorder(
-                borderRadius: BorderRadius.all(Radius.circular(5)),
-              gapPadding: 1
-            ),
+          border: OutlineInputBorder(
+              borderRadius: BorderRadius.all(Radius.circular(5)),
+              gapPadding: 1),
         ),
         textAlign: TextAlign.start,
         style: TextStyle(

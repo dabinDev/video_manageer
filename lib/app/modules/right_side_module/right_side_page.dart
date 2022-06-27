@@ -1,3 +1,4 @@
+
 import 'package:bitsdojo_window/bitsdojo_window.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -27,15 +28,56 @@ class RightSidePage extends GetView<RightSideController> {
         ),
         child: Column(children: [
           WindowTitleBarBox(
-            child: Row(
-              children: [
-                Expanded(child: MoveWindow()),
-                const WindowButtonsPage()
-              ],
+            child: Container(
+              color: Colors.white,
+              child: Row(
+                children: [
+                  Expanded(child: MoveWindow()),
+                  const WindowButtonsPage(),
+                ],
+              ),
             ),
-          )
+          ),
+          Expanded(child: Row(
+            children: [
+              Container(
+                width: 200,
+                child: ListView(
+                  children: getItems(),
+                ),
+              ),
+              Container(
+              ),
+            ],
+          ))
         ]),
       ),
     );
   }
+}
+
+
+List<Widget> getItems() {
+  List<Widget> list = [];
+  for (int i = 0; i < 10; i++) {
+    list.add(getTextItem(i, "测试数据${i}"));
+  }
+  return list;
+}
+
+
+Padding getTextItem(int index, String name) {
+  return Padding(
+    padding: EdgeInsets.fromLTRB(10, 0, 0, 0),
+    child: Text(
+      "测试数据${index + 1}",
+      textAlign: TextAlign.start,
+      style: const TextStyle(
+        height: 1.5,
+        textBaseline: TextBaseline.alphabetic,
+        fontSize: 18,
+        color: Colors.black,
+      ),
+    ),
+  );
 }
